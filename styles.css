@@ -1,0 +1,211 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  color: #1C1C1C;
+  background-color: #FFF8F0;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: #F7EDE2; /* rosado suave */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: fixed; /* CAMBIO: header siempre visible */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo-img {
+  width: 160px;
+  border-radius: 10px;
+}
+
+.nombre-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: #D4AF37;
+  margin-left: 20px;
+  flex: 1;
+  text-align: center; /* centrado horizontalmente */
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #1C1C1C;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #D4AF37;
+}
+
+/* HERO */
+.hero {
+  margin-top: 100px; /* CAMBIO: espacio para el header fijo */
+  height: 80vh;
+  background: url('https://via.placeholder.com/1200x800.png?text=Joyas+de+Lujo') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 248, 240, 0.4);
+  top: 0;
+  left: 0;
+}
+
+.hero-text {
+  position: relative;
+  color: #2C2C2C;
+  max-width: 600px;
+}
+
+.hero-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #D4AF37;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* COLECCIÓN */
+.coleccion {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.coleccion h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+
+/* Categorías */
+.categoria {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: #1C1C1C;
+  margin: 60px 0 20px;
+  text-transform: uppercase;
+}
+
+.grid-joyas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.joya {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.joya:hover {
+  transform: scale(1.03);
+}
+
+.joya img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.joya h4 {
+  margin: 15px 0 5px;
+  font-family: 'Playfair Display', serif;
+  color: #000000; /* negro */
+}
+
+/* PRECIOS Y MENSAJES */
+.precio {
+  color: #D4AF37;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.mensaje {
+  font-size: 14px;
+  color: #A67C0077;
+  margin-top: 5px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* SOBRE NOSOTROS */
+.sobre-nosotros {
+  background-color: #F7EDE2;
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.sobre-nosotros h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  color: #D4AF37;
+}
+
+.sobre-nosotros p {
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.8;
+  color: #D4AF37;
+  font-weight: 500;
+}
+
+/* MENSAJE FINAL */
+.agradecimiento {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #FFF8F0;
+}
+
+.agradecimiento h2 {
+  font-family: 'Playfair Display', serif;
+  color: #D4AF37;
+  font-size: 36px;
+}
+
+.agradecimiento p {
+  color: #D4AF37;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #F7EDE2;
+  text-align: center;
+  padding: 20px;
+  color: #1C1C1C;
+}
